@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_18248477f53772c10c46551e4b9b6fce {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_18248477f53772c10c46551e4b9b6fce" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_18248477f53772c10c46551e4b9b6fce = L.map(
+                "map_18248477f53772c10c46551e4b9b6fce",
+                {
+                    center: [60.16836330378591, 24.946338877583905],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: true,
+                }
+            );
+            L.control.scale().addTo(map_18248477f53772c10c46551e4b9b6fce);
+
+            
+
+        
+    
+            var tile_layer_87a99783c7bf95b51dd35f3fc0105943 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_18248477f53772c10c46551e4b9b6fce);
+        
+    
+        function geo_json_3f4f527f3ffe423c6d4e89b9fec60887_pointToLayer(feature, latlng) {
+            var opts = {};
+            
+            const iconOptions = {"extraClasses": "fa-rotate-0", "icon": "fa-mobile-screen", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            const iconRootAlias = L.AwesomeMarkers
+            opts.icon = new iconRootAlias.Icon(iconOptions)
+            
+            return new L.Marker(latlng, opts)
+        }
+
+        function geo_json_3f4f527f3ffe423c6d4e89b9fec60887_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_3f4f527f3ffe423c6d4e89b9fec60887 = L.geoJson(null, {
+                onEachFeature: geo_json_3f4f527f3ffe423c6d4e89b9fec60887_onEachFeature,
+            
+                pointToLayer: geo_json_3f4f527f3ffe423c6d4e89b9fec60887_pointToLayer
+        });
+
+        function geo_json_3f4f527f3ffe423c6d4e89b9fec60887_add (data) {
+            geo_json_3f4f527f3ffe423c6d4e89b9fec60887
+                .addData(data)
+                .addTo(map_18248477f53772c10c46551e4b9b6fce);
+        }
+            geo_json_3f4f527f3ffe423c6d4e89b9fec60887_add({"bbox": [-122.419906, -37.8142176, 144.9631608, 53.550341], "features": [{"bbox": [144.9631608, -37.8142176, 144.9631608, -37.8142176], "geometry": {"coordinates": [144.9631608, -37.8142176], "type": "Point"}, "id": "0", "properties": {"Application": "Arevo", "Based in": "\u201cMelbourne, Australia\u201d", "Integration Level": 1, "Latitude": -37.8142176, "Launch year": 2019, "Longitude": 144.9631608, "Status": "Active", "Transport Modes": "\u201cTrain, Bus, Trams, Bike, Parking, Petrol prices\u201d"}, "type": "Feature"}, {"bbox": [55.1885387, 25.0742823, 55.1885387, 25.0742823], "geometry": {"coordinates": [55.1885387, 25.0742823], "type": "Point"}, "id": "40", "properties": {"Application": "S\u0027hail", "Based in": "\u201cDubai, UAE\u201d", "Integration Level": 1, "Latitude": 25.0742823, "Launch year": 2017, "Longitude": 55.1885387, "Status": "Active", "Transport Modes": "\u201cMetro, Tram, Taxi and Bus\u201d"}, "type": "Feature"}, {"bbox": [-46.6333824, -23.5506507, -46.6333824, -23.5506507], "geometry": {"coordinates": [-46.6333824, -23.5506507], "type": "Point"}, "id": "38", "properties": {"Application": "Quicko", "Based in": "\u201cS\u00e3o Paulo, Brazil\u201d", "Integration Level": 1, "Latitude": -23.5506507, "Launch year": 2018, "Longitude": -46.6333824, "Status": "Active", "Transport Modes": "\u201cPublic and Private modes - Municipal buses, Trains, Subways, Trams, Shared bikes and Parking\u201d"}, "type": "Feature"}, {"bbox": [34.796666, 31.923249, 34.796666, 31.923249], "geometry": {"coordinates": [34.796666, 31.923249], "type": "Point"}, "id": "32", "properties": {"Application": "Moovit", "Based in": "\"Ness Ziona, Israel\u201c", "Integration Level": 1, "Latitude": 31.923249, "Launch year": 2012, "Longitude": 34.796666, "Status": "Active", "Transport Modes": "\u201cBike sharing, Carsharing, Car renting, Taxi, Urban PT, Regional PT\u201d"}, "type": "Feature"}, {"bbox": [10.000654, 53.550341, 10.000654, 53.550341], "geometry": {"coordinates": [10.000654, 53.550341], "type": "Point"}, "id": "28", "properties": {"Application": "Mobike", "Based in": "\u201cBeijing, China\u201d", "Integration Level": 1, "Latitude": 53.550341, "Launch year": 2015, "Longitude": 10.000654, "Status": "Active", "Transport Modes": "\u201cBike sharing\u201d"}, "type": "Feature"}, {"bbox": [-122.419906, 37.7790262, -122.419906, 37.7790262], "geometry": {"coordinates": [-122.419906, 37.7790262], "type": "Point"}, "id": "25", "properties": {"Application": "Lime", "Based in": "\u201cSan Francisco, US\u201d", "Integration Level": 1, "Latitude": 37.7790262, "Launch year": 2017, "Longitude": -122.419906, "Status": "Active", "Transport Modes": "\u201cBike sharing, e-scooter sharing\u201d"}, "type": "Feature"}, {"bbox": [9.9934336, 48.3974003, 9.9934336, 48.3974003], "geometry": {"coordinates": [9.9934336, 48.3974003], "type": "Point"}, "id": "14", "properties": {"Application": "Free2Move", "Based in": "\u201cUlm, Germany\u201d", "Integration Level": 1, "Latitude": 48.3974003, "Launch year": 2016, "Longitude": 9.9934336, "Status": "Active", "Transport Modes": "\u201cCarsharing, Car rental, Parking with valet services, Charging stations\u201d"}, "type": "Feature"}, {"bbox": [-71.060511, 42.3554334, -71.060511, 42.3554334], "geometry": {"coordinates": [-71.060511, 42.3554334], "type": "Point"}, "id": "54", "properties": {"Application": "Zipcar", "Based in": "\"Boston, US\u201d", "Integration Level": 1, "Latitude": 42.3554334, "Launch year": 2000, "Longitude": -71.060511, "Status": "Active", "Transport Modes": "\u201cCar sharing\u201d"}, "type": "Feature"}, {"bbox": [13.3888599, 52.5170365, 13.3888599, 52.5170365], "geometry": {"coordinates": [13.3888599, 52.5170365], "type": "Point"}, "id": "1", "properties": {"Application": "BerlinMobil", "Based in": "\u201cBerlin, Germany\u201d", "Integration Level": 1, "Latitude": 52.5170365, "Launch year": 2019, "Longitude": 13.3888599, "Status": "Active", "Transport Modes": "\u201cCar, Bus, Train, Bike, Flexible Carsharing\u201d"}, "type": "Feature"}, {"bbox": [-80.19362, 25.7741728, -80.19362, 25.7741728], "geometry": {"coordinates": [-80.19362, 25.7741728], "type": "Point"}, "id": "2", "properties": {"Application": "Bird", "Based in": "\u201cMiami, US\u201d", "Integration Level": 1, "Latitude": 25.7741728, "Launch year": 2017, "Longitude": -80.19362, "Status": "Active", "Transport Modes": "\u201cE-scooter sharing\u201d"}, "type": "Feature"}, {"bbox": [2.320041, 48.8588897, 2.320041, 48.8588897], "geometry": {"coordinates": [2.320041, 48.8588897], "type": "Point"}, "id": "3", "properties": {"Application": "BlaBlaCar", "Based in": "\u201cParis, France\u201d", "Integration Level": 1, "Latitude": 48.8588897, "Launch year": 2006, "Longitude": 2.320041, "Status": "Active", "Transport Modes": "\u201cLong-distance ride-sharing\u201d"}, "type": "Feature"}, {"bbox": [13.3888599, 52.5170365, 13.3888599, 52.5170365], "geometry": {"coordinates": [13.3888599, 52.5170365], "type": "Point"}, "id": "4", "properties": {"Application": "Car2go", "Based in": "\u201cBerlin, Germany\u201d", "Integration Level": 1, "Latitude": 52.5170365, "Launch year": 2008, "Longitude": 13.3888599, "Status": "Merged with DriveNow to form SHARE NOW", "Transport Modes": "\u201cCar sharing\u201d"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_3f4f527f3ffe423c6d4e89b9fec60887.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Application", "Integration Level", "Transport Modes", "Based in", "Launch year", "Status"];
+    let aliases = ["Application", "Integration Level", "Transport Modes", "Location", "Launch Year", "Status"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": false});
+                     
+    
+        function geo_json_8867e874d6c1b77699c585bd505f334c_pointToLayer(feature, latlng) {
+            var opts = {};
+            
+            const iconOptions = {"extraClasses": "fa-rotate-0", "icon": "fa-mobile-screen", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            const iconRootAlias = L.AwesomeMarkers
+            opts.icon = new iconRootAlias.Icon(iconOptions)
+            
+            return new L.Marker(latlng, opts)
+        }
+
+        function geo_json_8867e874d6c1b77699c585bd505f334c_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_8867e874d6c1b77699c585bd505f334c = L.geoJson(null, {
+                onEachFeature: geo_json_8867e874d6c1b77699c585bd505f334c_onEachFeature,
+            
+                pointToLayer: geo_json_8867e874d6c1b77699c585bd505f334c_pointToLayer
+        });
+
+        function geo_json_8867e874d6c1b77699c585bd505f334c_add (data) {
+            geo_json_8867e874d6c1b77699c585bd505f334c
+                .addData(data)
+                .addTo(map_18248477f53772c10c46551e4b9b6fce);
+        }
+            geo_json_8867e874d6c1b77699c585bd505f334c_add({"bbox": [-122.419906, -6.175247, 139.7744912, 57.4790124], "features": [{"bbox": [9.7385532, 52.3744779, 9.7385532, 52.3744779], "geometry": {"coordinates": [9.7385532, 52.3744779], "type": "Point"}, "id": "27", "properties": {"Application": "MobiFlow", "Based in": "\"Ghent, Belgium\u201d", "Integration Level": 2, "Latitude": 52.3744779, "Launch year": 2017, "Longitude": 9.7385532, "Status": "Active", "Transport Modes": "\"Train, Bus, Tram, Taxi, Bike, Charging stations\u201d"}, "type": "Feature"}, {"bbox": [-122.419906, 37.7790262, -122.419906, 37.7790262], "geometry": {"coordinates": [-122.419906, 37.7790262], "type": "Point"}, "id": "45", "properties": {"Application": "Uber", "Based in": "\u201cSan Francisco, US\u201d", "Integration Level": 2, "Latitude": 37.7790262, "Launch year": 2009, "Longitude": -122.419906, "Status": "Active", "Transport Modes": "\u201cRide-hailing, ride-sharing\u201d"}, "type": "Feature"}, {"bbox": [10.000654, 53.550341, 10.000654, 53.550341], "geometry": {"coordinates": [10.000654, 53.550341], "type": "Point"}, "id": "39", "properties": {"Application": "ReachNow", "Based in": "\u201cHamburg, Germany\u201d", "Integration Level": 2, "Latitude": 53.550341, "Launch year": 2015, "Longitude": 10.000654, "Status": "Active", "Transport Modes": "\u201cPublic transport, Taxis, Cars, Bikes and e-scooter\u201d"}, "type": "Feature"}, {"bbox": [-8.6107884, 41.1494512, -8.6107884, 41.1494512], "geometry": {"coordinates": [-8.6107884, 41.1494512], "type": "Point"}, "id": "37", "properties": {"Application": "Pick", "Based in": "\u201cPorto, Portugal\u201d", "Integration Level": 2, "Latitude": 41.1494512, "Launch year": 2018, "Longitude": -8.6107884, "Status": "Active", "Transport Modes": "\u201cMetro, Bus, Train, Ferry, Bike-sharing, Car transport \u0026 Parking\u201d"}, "type": "Feature"}, {"bbox": [77.590082, 12.9767936, 77.590082, 12.9767936], "geometry": {"coordinates": [77.590082, 12.9767936], "type": "Point"}, "id": "36", "properties": {"Application": "Ola", "Based in": "\u201cBangalore, India\u201d", "Integration Level": 2, "Latitude": 12.9767936, "Launch year": 2010, "Longitude": 77.590082, "Status": "Active", "Transport Modes": "\u201cRide-hailing, ride-sharing\u201d"}, "type": "Feature"}, {"bbox": [13.2179488, 43.7149517, 13.2179488, 43.7149517], "geometry": {"coordinates": [13.2179488, 43.7149517], "type": "Point"}, "id": "35", "properties": {"Application": "MyCicero", "Based in": "\u201cSenigallia, Italy\u201d", "Integration Level": 2, "Latitude": 43.7149517, "Launch year": 2015, "Longitude": 13.2179488, "Status": "Active", "Transport Modes": "\u201cUrban PT, Regional PT, Parking, Permit for urban congestion charging zones\u201d"}, "type": "Feature"}, {"bbox": [4.351697, 50.8465573, 4.351697, 50.8465573], "geometry": {"coordinates": [4.351697, 50.8465573], "type": "Point"}, "id": "34", "properties": {"Application": "Move Brussels", "Based in": "\u201cBrussels, Belgium\u201d", "Integration Level": 2, "Latitude": 50.8465573, "Launch year": 2020, "Longitude": 4.351697, "Status": "Active", "Transport Modes": "\u201cPublic transport, Bike sharing, Shared scooters, Carsharing, Taxi\u201d"}, "type": "Feature"}, {"bbox": [4.3873058, 45.4401467, 4.3873058, 45.4401467], "geometry": {"coordinates": [4.3873058, 45.4401467], "type": "Point"}, "id": "33", "properties": {"Application": "Moovizy", "Based in": "\u201cSt. Etienne, France\u201d", "Integration Level": 2, "Latitude": 45.4401467, "Launch year": 2016, "Longitude": 4.3873058, "Status": "Active", "Transport Modes": "\u201cBus, Coach, Tram, Train, Bicycle, Taxi, Carpooling, Cars and Car park information, Trains\u201d"}, "type": "Feature"}, {"bbox": [6.12791, 49.618509, 6.12791, 49.618509], "geometry": {"coordinates": [6.12791, 49.618509], "type": "Point"}, "id": "29", "properties": {"Application": "Mobiliteit", "Based in": "\u201cLuxembourg, Luxembourg\u201d", "Integration Level": 2, "Latitude": 49.618509, "Launch year": 2019, "Longitude": 6.12791, "Status": "Active", "Transport Modes": "\u201cBicycles, Buses, Trains, Tram, Charging points, Park \u0026 ride and Car\u201d"}, "type": "Feature"}, {"bbox": [2.0388736, 49.0527528, 2.0388736, 49.0527528], "geometry": {"coordinates": [2.0388736, 49.0527528], "type": "Point"}, "id": "53", "properties": {"Application": "Yuwway", "Based in": "\u201cCergy, France\u201d", "Integration Level": 2, "Latitude": 49.0527528, "Launch year": 2019, "Longitude": 2.0388736, "Status": "Active", "Transport Modes": "\u201cBike sharing, Carsharing, Car renting, Taxi, Urban PT, Regional PT\u201d"}, "type": "Feature"}, {"bbox": [-122.419906, 37.7790262, -122.419906, 37.7790262], "geometry": {"coordinates": [-122.419906, 37.7790262], "type": "Point"}, "id": "26", "properties": {"Application": "Lyft", "Based in": "\u201cSan Francisco, US\"", "Integration Level": 2, "Latitude": 37.7790262, "Launch year": 2012, "Longitude": -122.419906, "Status": "Active", "Transport Modes": "\u201cRide-hailing, ride-sharing\u201d"}, "type": "Feature"}, {"bbox": [-73.5698065, 45.5031824, -73.5698065, 45.5031824], "geometry": {"coordinates": [-73.5698065, 45.5031824], "type": "Point"}, "id": "44", "properties": {"Application": "Transit App", "Based in": "\u201cMontreal, Canada\u201d", "Integration Level": 2, "Latitude": 45.5031824, "Launch year": 2012, "Longitude": -73.5698065, "Status": "Active", "Transport Modes": "\u201cPublic transport, bike sharing, ride-sharing, taxi\u201d"}, "type": "Feature"}, {"bbox": [2.320041, 48.8588897, 2.320041, 48.8588897], "geometry": {"coordinates": [2.320041, 48.8588897], "type": "Point"}, "id": "5", "properties": {"Application": "Citen", "Based in": "\u201cParis, France\u201d", "Integration Level": 2, "Latitude": 48.8588897, "Launch year": 2020, "Longitude": 2.320041, "Status": "Active", "Transport Modes": "\u201cBike sharing, carsharing, Car renting, Taxi, Urban Public Transport (PT), Regional PT\u201d"}, "type": "Feature"}, {"bbox": [106.8270488, -6.175247, 106.8270488, -6.175247], "geometry": {"coordinates": [106.8270488, -6.175247], "type": "Point"}, "id": "23", "properties": {"Application": "Jak Lingko", "Based in": "\u201cJakarta, Indonesia\u201d", "Integration Level": 2, "Latitude": -6.175247, "Launch year": 2021, "Longitude": 106.8270488, "Status": "Active", "Transport Modes": "\u201cTrain, Trams, Rail, BRT, Buses, Ridesharing\u201d"}, "type": "Feature"}, {"bbox": [-1.4761491, 52.9212617, -1.4761491, 52.9212617], "geometry": {"coordinates": [-1.4761491, 52.9212617], "type": "Point"}, "id": "9", "properties": {"Application": "DerbyGo", "Based in": "\u201cDerby, UK\u201d", "Integration Level": 2, "Latitude": 52.9212617, "Launch year": 2021, "Longitude": -1.4761491, "Status": "Active", "Transport Modes": "\u201cPublic transport (Bus and Tram), Bicycles, Cars, Parking, e-Bikes\u201d"}, "type": "Feature"}, {"bbox": [116.3912972, 39.9057136, 116.3912972, 39.9057136], "geometry": {"coordinates": [116.3912972, 39.9057136], "type": "Point"}, "id": "10", "properties": {"Application": "Didi Chuxing", "Based in": "\u201cBeijing, China\u201d", "Integration Level": 2, "Latitude": 39.9057136, "Launch year": 2012, "Longitude": 116.3912972, "Status": "Active", "Transport Modes": "\u201cRide-hailing, ride-sharing\u201d"}, "type": "Feature"}, {"bbox": [5.0414701, 47.3215806, 5.0414701, 47.3215806], "geometry": {"coordinates": [5.0414701, 47.3215806], "type": "Point"}, "id": "11", "properties": {"Application": "Divia Mobilit\u00e9s", "Based in": "\u201cDijon, France\u201d", "Integration Level": 2, "Latitude": 47.3215806, "Launch year": 2012, "Longitude": 5.0414701, "Status": "Active", "Transport Modes": "\u201cBus \u0026 Tram, Bike, Park \u0026 Ride and Shared Car\u201d"}, "type": "Feature"}, {"bbox": [139.7744912, 35.6840574, 139.7744912, 35.6840574], "geometry": {"coordinates": [139.7744912, 35.6840574], "type": "Point"}, "id": "12", "properties": {"Application": "EMOT", "Based in": "\u201cTokyo, Japan\u201d", "Integration Level": 2, "Latitude": 35.6840574, "Launch year": 2019, "Longitude": 139.7744912, "Status": "Active", "Transport Modes": "\u201cOn-demand shuttles, Taxis, Buses, Carsharing, Bike sharing\u201d"}, "type": "Feature"}, {"bbox": [-0.12765, 51.5073359, -0.12765, 51.5073359], "geometry": {"coordinates": [-0.12765, 51.5073359], "type": "Point"}, "id": "6", "properties": {"Application": "Citymapper", "Based in": "\u201cLondon, UK\u201d", "Integration Level": 2, "Latitude": 51.5073359, "Launch year": 2011, "Longitude": -0.12765, "Status": "Active", "Transport Modes": "\u201cBike sharing, Carsharing, car renting, Taxi, Urban PT, Regional PT\u201d"}, "type": "Feature"}, {"bbox": [16.3725042, 48.2083537, 16.3725042, 48.2083537], "geometry": {"coordinates": [16.3725042, 48.2083537], "type": "Point"}, "id": "51", "properties": {"Application": "WienMobil", "Based in": "\u201cVienna, Austria\u201d", "Integration Level": 2, "Latitude": 48.2083537, "Launch year": 2018, "Longitude": 16.3725042, "Status": "Active", "Transport Modes": "\u201cBike sharing, Carsharing, Taxi, Urban PT, parking\u201d"}, "type": "Feature"}, {"bbox": [16.3725042, 48.2083537, 16.3725042, 48.2083537], "geometry": {"coordinates": [16.3725042, 48.2083537], "type": "Point"}, "id": "49", "properties": {"Application": "Wegfinder", "Based in": "\u201cVienna, Austria\u201d", "Integration Level": 2, "Latitude": 48.2083537, "Launch year": 2015, "Longitude": 16.3725042, "Status": "Active", "Transport Modes": "\u201cBus, Tram, Carsharing, Bike sharing, e-scooter\u201d"}, "type": "Feature"}, {"bbox": [5.9231488, 52.9984742, 5.9231488, 52.9984742], "geometry": {"coordinates": [5.9231488, 52.9984742], "type": "Point"}, "id": "16", "properties": {"Application": "Glimble", "Based in": "\u201cHeerenveen, Netherlands\u201d", "Integration Level": 2, "Latitude": 52.9984742, "Launch year": 2021, "Longitude": 5.9231488, "Status": "Active", "Transport Modes": "\u201cPublic transport (Buses and Trams), Bikeshare, Carsharing, Taxi and Scooter share\u201d"}, "type": "Feature"}, {"bbox": [106.8270488, -6.175247, 106.8270488, -6.175247], "geometry": {"coordinates": [106.8270488, -6.175247], "type": "Point"}, "id": "18", "properties": {"Application": "Gojek", "Based in": "\u201cJakarta, Indonesia\u201d", "Integration Level": 2, "Latitude": -6.175247, "Launch year": 2010, "Longitude": 106.8270488, "Status": "Active", "Transport Modes": "\u201cRide-hailing, ride-sharing, food delivery, courier\u201d"}, "type": "Feature"}, {"bbox": [103.859356, 1.354845, 103.859356, 1.354845], "geometry": {"coordinates": [103.859356, 1.354845], "type": "Point"}, "id": "19", "properties": {"Application": "Grab", "Based in": "\u201cSingapore, Singapore\u201d", "Integration Level": 2, "Latitude": 1.354845, "Launch year": 2012, "Longitude": 103.859356, "Status": "Active", "Transport Modes": "\u201cRide-hailing, ride-sharing, food delivery\u201d"}, "type": "Feature"}, {"bbox": [10.000654, 53.550341, 10.000654, 53.550341], "geometry": {"coordinates": [10.000654, 53.550341], "type": "Point"}, "id": "21", "properties": {"Application": "Hvv Switch", "Based in": "\u201cHamburg, Germany\u201d", "Integration Level": 2, "Latitude": 53.550341, "Launch year": 2020, "Longitude": 10.000654, "Status": "Active", "Transport Modes": "\u201cBus, Train, Ride \u0026 Carsharing\u201d"}, "type": "Feature"}, {"bbox": [-3.7035825, 40.4167047, -3.7035825, 40.4167047], "geometry": {"coordinates": [-3.7035825, 40.4167047], "type": "Point"}, "id": "22", "properties": {"Application": "Imbric", "Based in": "\u201cMadrid, Spain\u201d", "Integration Level": 2, "Latitude": 40.4167047, "Launch year": 2011, "Longitude": -3.7035825, "Status": "Active", "Transport Modes": "\u201cTaxi, Bus, Moto-sharing, Parking\u201d"}, "type": "Feature"}, {"bbox": [-4.225739, 57.4790124, -4.225739, 57.4790124], "geometry": {"coordinates": [-4.225739, 57.4790124], "type": "Point"}, "id": "17", "properties": {"Application": "Go-Hi", "Based in": "\u201cInverness, Scotland\u201d", "Integration Level": 2, "Latitude": 57.4790124, "Launch year": 2021, "Longitude": -4.225739, "Status": "Active", "Transport Modes": "\u201cBuses, Trains, Taxis, Car hire, Car clubs, Bicycle hire, Ferries, Air travel and Demand responsive transport (DRT)\u201d"}, "type": "Feature"}, {"bbox": [-85.759407, 38.2542376, -85.759407, 38.2542376], "geometry": {"coordinates": [-85.759407, 38.2542376], "type": "Point"}, "id": "43", "properties": {"Application": "Tarc", "Based in": "\u201cLouisville, USA\u201d", "Integration Level": 2, "Latitude": 38.2542376, "Launch year": 2019, "Longitude": -85.759407, "Status": "Active", "Transport Modes": "\u201cTrain, Bus, Ridesharing, Carsharing and Scooter sharing\u201d"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_8867e874d6c1b77699c585bd505f334c.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Application", "Integration Level", "Transport Modes", "Based in", "Launch year", "Status"];
+    let aliases = ["Application", "Integration Level", "Transport Modes", "Location", "Launch Year", "Status"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": false});
+                     
+    
+        function geo_json_c246bdfde1689b780bb5d8e7c897313d_pointToLayer(feature, latlng) {
+            var opts = {};
+            
+            const iconOptions = {"extraClasses": "fa-rotate-0", "icon": "fa-mobile-screen", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            const iconRootAlias = L.AwesomeMarkers
+            opts.icon = new iconRootAlias.Icon(iconOptions)
+            
+            return new L.Marker(latlng, opts)
+        }
+
+        function geo_json_c246bdfde1689b780bb5d8e7c897313d_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c246bdfde1689b780bb5d8e7c897313d = L.geoJson(null, {
+                onEachFeature: geo_json_c246bdfde1689b780bb5d8e7c897313d_onEachFeature,
+            
+                pointToLayer: geo_json_c246bdfde1689b780bb5d8e7c897313d_pointToLayer
+        });
+
+        function geo_json_c246bdfde1689b780bb5d8e7c897313d_add (data) {
+            geo_json_c246bdfde1689b780bb5d8e7c897313d
+                .addData(data)
+                .addTo(map_18248477f53772c10c46551e4b9b6fce);
+        }
+            geo_json_c246bdfde1689b780bb5d8e7c897313d_add({"bbox": [-74.0060152, 40.7127281, 24.9427473, 60.1674881], "features": [{"bbox": [11.9670171, 57.7072326, 11.9670171, 57.7072326], "geometry": {"coordinates": [11.9670171, 57.7072326], "type": "Point"}, "id": "46", "properties": {"Application": "UbiGo", "Based in": "\u201cGothenburg, Sweden\u201d", "Integration Level": 3, "Latitude": 57.7072326, "Launch year": 2013, "Longitude": 11.9670171, "Status": "Pilot ended, relaunched in 2019", "Transport Modes": "\u201cPublic transport, car sharing, bike sharing, taxi\u201d"}, "type": "Feature"}, {"bbox": [-74.0060152, 40.7127281, -74.0060152, 40.7127281], "geometry": {"coordinates": [-74.0060152, 40.7127281], "type": "Point"}, "id": "48", "properties": {"Application": "ViaVan", "Based in": "\u201cNew York City, US\u201d", "Integration Level": 3, "Latitude": 40.7127281, "Launch year": 2017, "Longitude": -74.0060152, "Status": "Active", "Transport Modes": "\u201cRide-sharing, public transport\u201d"}, "type": "Feature"}, {"bbox": [7.4514512, 46.9482713, 7.4514512, 46.9482713], "geometry": {"coordinates": [7.4514512, 46.9482713], "type": "Point"}, "id": "52", "properties": {"Application": "Yumuv", "Based in": "\u201cBern, Switzerland\u201d", "Integration Level": 3, "Latitude": 46.9482713, "Launch year": 2020, "Longitude": 7.4514512, "Status": "Active", "Transport Modes": "\u201cTram, e-Bike, Bus, e-Scooter, Carsharing\u201d"}, "type": "Feature"}, {"bbox": [24.9427473, 60.1674881, 24.9427473, 60.1674881], "geometry": {"coordinates": [24.9427473, 60.1674881], "type": "Point"}, "id": "50", "properties": {"Application": "Whim", "Based in": "\u201cHelsinki, Finland\u201d", "Integration Level": 3, "Latitude": 60.1674881, "Launch year": 2017, "Longitude": 24.9427473, "Status": "Active", "Transport Modes": "\u201cBike sharing, Carsharing, Car renting, Taxi, Urban PT, Regional PT\u201d"}, "type": "Feature"}, {"bbox": [7.3389937, 47.7467233, 7.3389937, 47.7467233], "geometry": {"coordinates": [7.3389937, 47.7467233], "type": "Point"}, "id": "8", "properties": {"Application": "Compte mobilit\u00e9", "Based in": "\u201cMulhouse, France\u201d", "Integration Level": 3, "Latitude": 47.7467233, "Launch year": 2017, "Longitude": 7.3389937, "Status": "Active", "Transport Modes": "\u201cPublic transport (Bus and Tram), Bicycles, Carsharing, Parking, e-Bikes\u201d"}, "type": "Feature"}, {"bbox": [16.3725042, 48.2083537, 16.3725042, 48.2083537], "geometry": {"coordinates": [16.3725042, 48.2083537], "type": "Point"}, "id": "41", "properties": {"Application": "Smile MaaS", "Based in": "\u201cVienna, Austria\u201d", "Integration Level": 3, "Latitude": 48.2083537, "Launch year": 2014, "Longitude": 16.3725042, "Status": "Pilot ended", "Transport Modes": "\u201cPublic transport, car sharing, bike sharing, taxi\u201d"}, "type": "Feature"}, {"bbox": [-0.12765, 51.5073359, -0.12765, 51.5073359], "geometry": {"coordinates": [-0.12765, 51.5073359], "type": "Point"}, "id": "7", "properties": {"Application": "Citymapper Ride", "Based in": "\u201cLondon, UK\u201d", "Integration Level": 3, "Latitude": 51.5073359, "Launch year": 2017, "Longitude": -0.12765, "Status": "Active", "Transport Modes": "\u201cPublic transport, ride-sharing, bike sharing, taxi\u201d"}, "type": "Feature"}, {"bbox": [8.725363, 50.151645, 8.725363, 50.151645], "geometry": {"coordinates": [8.725363, 50.151645], "type": "Point"}, "id": "30", "properties": {"Application": "Mobility Inside", "Based in": "\u201cFrankfurt am Main, Germany\u201d", "Integration Level": 3, "Latitude": 50.151645, "Launch year": 2020, "Longitude": 8.725363, "Status": "Active", "Transport Modes": "\u201cBus, Train, Carsharing\u201d"}, "type": "Feature"}, {"bbox": [13.3888599, 52.5170365, 13.3888599, 52.5170365], "geometry": {"coordinates": [13.3888599, 52.5170365], "type": "Point"}, "id": "24", "properties": {"Application": "Jelbi", "Based in": "\u201cBerlin, Germany\u201d", "Integration Level": 3, "Latitude": 52.5170365, "Launch year": 2019, "Longitude": 13.3888599, "Status": "Active", "Transport Modes": "\u201cBus, Train, e-moped, e-scooter, Bike, Car, Taxi, Shuttles and Ridesharing\u201d"}, "type": "Feature"}, {"bbox": [9.7385532, 52.3744779, 9.7385532, 52.3744779], "geometry": {"coordinates": [9.7385532, 52.3744779], "type": "Point"}, "id": "20", "properties": {"Application": "GVH", "Based in": "\u201cHannover, Germany\u201d", "Integration Level": 3, "Latitude": 52.3744779, "Launch year": 2004, "Longitude": 9.7385532, "Status": "Active", "Transport Modes": "\u201cCar sharing, Bike transport, Park \u0026 ride, Bike \u0026 ride, Taxi\u201d"}, "type": "Feature"}, {"bbox": [5.127684, 52.0809856, 5.127684, 52.0809856], "geometry": {"coordinates": [5.127684, 52.0809856], "type": "Point"}, "id": "15", "properties": {"Application": "Gaiyo", "Based in": "\u201cUtrecht, Netherlands\u201d", "Integration Level": 3, "Latitude": 52.0809856, "Launch year": 2008, "Longitude": 5.127684, "Status": "Active", "Transport Modes": "\u201cShared cars, Shared scooters, Shared bicycles and Public transport, Parking\u201d"}, "type": "Feature"}, {"bbox": [16.3725042, 48.2083537, 16.3725042, 48.2083537], "geometry": {"coordinates": [16.3725042, 48.2083537], "type": "Point"}, "id": "13", "properties": {"Application": "Fluidtime", "Based in": "\u201cVienna, Austria\u201d", "Integration Level": 3, "Latitude": 48.2083537, "Launch year": 2013, "Longitude": 16.3725042, "Status": "Active", "Transport Modes": "\u201cBike sharing, Carsharing, Car renting, Taxi, Urban PT\u201d"}, "type": "Feature"}, {"bbox": [2.320041, 48.8588897, 2.320041, 48.8588897], "geometry": {"coordinates": [2.320041, 48.8588897], "type": "Point"}, "id": "42", "properties": {"Application": "SNCF Assistant", "Based in": "\"Paris, France\u201d", "Integration Level": 3, "Latitude": 48.8588897, "Launch year": 2019, "Longitude": 2.320041, "Status": "Active", "Transport Modes": "\u201cTrain, Bus, Taxi and Carsharing\""}, "type": "Feature"}, {"bbox": [4.423126, 50.928711, 4.423126, 50.928711], "geometry": {"coordinates": [4.423126, 50.928711], "type": "Point"}, "id": "31", "properties": {"Application": "Modalizy", "Based in": "\u201cVilvoorde, Belgium\u201d", "Integration Level": 3, "Latitude": 50.928711, "Launch year": 2017, "Longitude": 4.423126, "Status": "Active", "Transport Modes": "\u201cPublic transport, Carsharing, Taxis, Cycling, Walking\u201d"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_c246bdfde1689b780bb5d8e7c897313d.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Application", "Integration Level", "Transport Modes", "Based in", "Launch year", "Status"];
+    let aliases = ["Application", "Integration Level", "Transport Modes", "Location", "Launch Year", "Status"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": false});
+                     
+    
+        function geo_json_6d99ecc9ad112c9a56c32ed9d4246a45_pointToLayer(feature, latlng) {
+            var opts = {};
+            
+            const iconOptions = {"extraClasses": "fa-rotate-0", "icon": "fa-mobile-screen", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            const iconRootAlias = L.AwesomeMarkers
+            opts.icon = new iconRootAlias.Icon(iconOptions)
+            
+            return new L.Marker(latlng, opts)
+        }
+
+        function geo_json_6d99ecc9ad112c9a56c32ed9d4246a45_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6d99ecc9ad112c9a56c32ed9d4246a45 = L.geoJson(null, {
+                onEachFeature: geo_json_6d99ecc9ad112c9a56c32ed9d4246a45_onEachFeature,
+            
+                pointToLayer: geo_json_6d99ecc9ad112c9a56c32ed9d4246a45_pointToLayer
+        });
+
+        function geo_json_6d99ecc9ad112c9a56c32ed9d4246a45_add (data) {
+            geo_json_6d99ecc9ad112c9a56c32ed9d4246a45
+                .addData(data)
+                .addTo(map_18248477f53772c10c46551e4b9b6fce);
+        }
+            geo_json_6d99ecc9ad112c9a56c32ed9d4246a45_add({"bbox": [121.5636796, 25.0375198, 121.5636796, 25.0375198], "features": [{"bbox": [121.5636796, 25.0375198, 121.5636796, 25.0375198], "geometry": {"coordinates": [121.5636796, 25.0375198], "type": "Point"}, "id": "47", "properties": {"Application": "Umaji", "Based in": "\u201cTaipei, Taiwan\u201d", "Integration Level": 4, "Latitude": 25.0375198, "Launch year": 2020, "Longitude": 121.5636796, "Status": "Active", "Transport Modes": "\u201cBuses, Demand-responsive transit, Shared bikes, Carsharing and Scooters, Taxi, Rental cars\u201d"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_6d99ecc9ad112c9a56c32ed9d4246a45.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Application", "Integration Level", "Transport Modes", "Based in", "Launch year", "Status"];
+    let aliases = ["Application", "Integration Level", "Transport Modes", "Location", "Launch Year", "Status"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": false});
+                     
+    
+            var layer_control_dddcb78db69658dafaa20139ce8e0e75 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_87a99783c7bf95b51dd35f3fc0105943,
+                },
+                overlays :  {
+                    "Level 1: Integrated information" : geo_json_3f4f527f3ffe423c6d4e89b9fec60887,
+                    "Level 2: Integrated book and pay" : geo_json_8867e874d6c1b77699c585bd505f334c,
+                    "Level 3: Integrated offering" : geo_json_c246bdfde1689b780bb5d8e7c897313d,
+                    "Level 4: Promotes societal goals" : geo_json_6d99ecc9ad112c9a56c32ed9d4246a45,
+                },
+            };
+            L.control.layers(
+                layer_control_dddcb78db69658dafaa20139ce8e0e75.base_layers,
+                layer_control_dddcb78db69658dafaa20139ce8e0e75.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_18248477f53772c10c46551e4b9b6fce);
+        
+</script>
+</html>
